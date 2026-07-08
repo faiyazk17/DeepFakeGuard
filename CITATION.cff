@@ -1,0 +1,71 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the software and the underlying methods."
+type: software
+title: "DeepFakeGuard: Multimodal Deepfake Detection Library"
+version: 0.4.0
+date-released: 2026-02-20
+authors:
+  - family-names: Biswas
+    given-names: Aryan
+    email: aryanbiswas16@gmail.com
+repository-code: "https://github.com/aryanbiswas16/DeepfakeVidDetection"
+license: MIT
+keywords:
+  - deepfake detection
+  - computer vision
+  - pytorch
+  - dinov3
+  - d3
+  - deep learning
+preferred-citation:
+  type: software
+  title: "DeepFakeGuard: A Unified Framework for Deepfake Detection"
+  authors:
+    - family-names: Biswas
+      given-names: Aryan
+  year: 2026
+  url: "https://github.com/aryanbiswas16/DeepfakeVidDetection"
+references:
+  - type: article
+    title: "D3: Training-Free AI-Generated Video Detection Using Second-Order Features"
+    authors:
+      - family-names: Zheng
+        given-names: Chende
+      - family-names: Suo
+        given-names: Ruiqi
+      - family-names: Lin
+        given-names: Chenhao
+      - family-names: Zhao
+        given-names: Zhengyu
+      - family-names: Yang
+        given-names: Le
+      - family-names: Liu
+        given-names: Shuai
+      - family-names: Yang
+        given-names: Minghui
+      - family-names: Wang
+        given-names: Cong
+      - family-names: Shen
+        given-names: Chao
+    year: 2025
+    conference:
+      name: "IEEE/CVF International Conference on Computer Vision (ICCV)"
+    url: "https://arxiv.org/abs/2508.00701"
+  - type: article
+    title: "IvyFake: An Explainable and Optimized AI-Generated Image Detection"
+    authors:
+      - family-names: Khan
+        given-names: Hamza
+      - family-names: et al.
+    year: 2024
+    url: "https://github.com/HamzaKhan760/IvyFakeGenDetector"
+  - type: article
+    title: "Emerging Properties in Self-Supervised Vision Transformers"
+    authors:
+      - family-names: Caron
+        given-names: Mathilde
+      - family-names: et al.
+    year: 2021
+    conference:
+      name: "ICCV"
+    url: "https://github.com/facebookresearch/dino"

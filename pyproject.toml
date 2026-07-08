@@ -1,0 +1,85 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deepfake_guard"
+version = "0.4.0"
+description = "Multimodal Deepfake Detection Library with Multiple Detector Backends (DINOv3, ResNet18, IvyFake, D3, LipFD)"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Aryan Biswas", email = "aryanbiswas16@gmail.com"},
+]
+keywords = ["deepfake", "detection", "computer-vision", "pytorch", "dinov3", "d3", "lipfd"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "torch>=2.0.0",
+    "torchvision>=0.15.0",
+    "opencv-python>=4.8.0",
+    "numpy>=1.24.0",
+    "Pillow>=10.0.0",
+    "scikit-learn>=1.3.0",
+    "timm>=0.9.0",
+    "facenet-pytorch>=2.5.0",
+    "tqdm>=4.65.0",
+    "transformers>=4.30.0",
+    "librosa>=0.10.0",
+    "packaging"
+]
+
+[project.optional-dependencies]
+dev = [
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "pytest>=7.0.0",
+]
+ui = [
+    "streamlit>=1.25.0",
+    "requests>=2.31.0",
+    "plotly>=5.15.0"
+]
+api = [
+    "fastapi>=0.100.0",
+    "uvicorn>=0.23.0",
+    "python-multipart>=0.0.6"
+]
+all = [
+    "streamlit>=1.25.0",
+    "requests>=2.31.0",
+    "fastapi>=0.100.0",
+    "uvicorn>=0.23.0",
+    "python-multipart>=0.0.6"
+]
+
+[project.urls]
+Homepage = "https://github.com/aryanbiswas16/DeepFakeGuard"
+Repository = "https://github.com/aryanbiswas16/DeepFakeGuard"
+Documentation = "https://github.com/aryanbiswas16/DeepFakeGuard#readme"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"deepfake_guard" = ["weights/*.pth"]
+
+[tool.black]
+line-length = 100
+target-version = ['py38', 'py39', 'py310', 'py311']
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
