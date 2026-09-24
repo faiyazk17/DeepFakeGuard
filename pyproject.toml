@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}
 authors = [
-    {name = "Aryan Biswas", email = "aryanbiswas16@gmail.com"},
+    {name = "Faiyaz Kazi", email = "faiyazk1012@gmail.com"},
 ]
 keywords = ["deepfake", "detection", "computer-vision", "pytorch", "dinov3", "d3", "lipfd"]
 classifiers = [
