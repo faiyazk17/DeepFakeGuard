@@ -64,9 +64,9 @@ all = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/aryanbiswas16/DeepFakeGuard"
-Repository = "https://github.com/aryanbiswas16/DeepFakeGuard"
-Documentation = "https://github.com/aryanbiswas16/DeepFakeGuard#readme"
+Homepage = "https://github.com/faiyazk17/DeepFakeGuard"
+Repository = "https://github.com/faiyazk17/DeepFakeGuard"
+Documentation = "https://github.com/faiyazk17/DeepFakeGuard#readme"
 
 [tool.setuptools.packages.find]
 where = ["src"]
