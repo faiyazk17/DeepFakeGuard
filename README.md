@@ -24,7 +24,7 @@ Python 3.8+, PyTorch 2.0+
 
 ### Install (local development)
 ```bash
-git clone https://github.com/aryanbiswas16/DeepFakeGuard.git
+git clone https://github.com/faiyazk17/DeepFakeGuard
 cd DeepFakeGuard
 pip install -e .
 
